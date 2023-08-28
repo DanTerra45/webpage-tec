@@ -1,0 +1,21 @@
+.logo {
+    background: left / cover url('https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2022-08/220805-border-collie-play-mn-1100-82d2f1.jpg');
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    font:
+      bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script',
+      fantasy;
+    color: #ceedf0;
+    text-shadow: #000 2px 2px 0.2rem;
+  }
+  
+  header > h1 {
+    margin-bottom: 0;
+  }
+  
+  header > time {
+    font: italic 0.7rem sans-serif;
+  }
+  
