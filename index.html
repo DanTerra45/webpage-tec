@@ -75,5 +75,42 @@
     <div>
         <p></p>
     </div>
+    <!-- Codigo Rust -->
+    <div>
+        <p><code>use std::io::{self, Write};
+
+            fn main() {
+                loop {
+                    println!("Menú:");
+                    println!("1. Opción 1");
+                    println!("2. Opción 2");
+                    println!("3. Salir");
+            
+                    print!("Elija una opción: ");
+                    io::stdout().flush().unwrap();
+            
+                    let mut eleccion = String::new();
+                    io::stdin().read_line(&mut eleccion).unwrap();
+                    let eleccion: u32 = match eleccion.trim().parse() {
+                        Ok(num) => num,
+                        Err(_) => {
+                            println!("Ingrese un número válido.");
+                            continue;
+                        }
+                    };
+            
+                    match eleccion {
+                        1 => println!("Elegiste la opción 1"),
+                        2 => println!("Elegiste la opción 2"),
+                        3 => {
+                            println!("Adiós");
+                            break;
+                        },
+                        _ => println!("Opción no válida"),
+                    }
+                }
+            }
+            </code></p>
+    </div>
 </body>
 </html>
