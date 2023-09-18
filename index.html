@@ -3,114 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Elements</title>
 </head>
-<body>
-    <h1>El titulo de la página</h1>
-    <h2>El titulo de la página</h2>
-    <h3>El titulo de la página</h3>
-    <h4>El titulo de la página</h4>
-    <h5>El titulo de la página</h5>
-    <h6>El titulo de la página</h6>
-    <p style="font-size: 2em; font-weight: bold;">Hola.</p>
-    <p>
-        En esta materia se teme,<br/>
-        Que cuando llegue el momento se quiebre,<br/>
-        Por muy buena "idea" que suene,<br/>
-        Adios para siempre, br.<br/>
-    </p>
-    <h6>Esto no es correcto</h6>
-    <hr>
-    <p>
-        <br>Calle "Inexistente", por tu mente.<br/>
-        <br>Av. Imaginación al lado de Tenerife.<br/>
-    </p>
-    <div>
-        <p>Bueno, eso dicen.</p>
-        <hr>
-        <p>Se dice que es correcto, cierto?</p>
-    </div>
-    <div>
-        <p>En la presentacion</p>
-        <hr>
-        <p>Alguna vez escuchaste el temor de decir palabras largas como <wbr>supercalifragilisticoespialidoso</p>
-    </div>
-    <!-- Subindice -->
-    <div>
-        <p>En la presentacion <sub>al cuadrado inferior.</sub></p>
-    </div>
-    <!-- Enfásis -->
-    <div>
-        <p>En la presentacion <strong>MUCHO CUIDADO AHHH.</strong></p>
-    </div>
-    <!-- Cursiva en texto -->
-    <div>
-        <p>En la presentacion <em>nos vamos a poner nerviosos.</em></p>
-    </div>
-    <!-- Citacion de texto -->
-    <div>
-        <p>En la presentacion <q>MUCHO CUIDADO AHHH.</q></p>
-    </div>
-    <!-- Marcar un elemento -->
-    <div>
-        <p>En la presentacion <mark>todos te estan mirando fijamente.</mark></p>
-    </div>
-    <!-- Cita en bloque -->
-    <div>
-         <p>En la presentacion <cite>... me quedo sin ideas</cite></p>
-    </div>
-    <!-- Definicion del termino -->
-    <div>
-        <p>En la presentacion, <dfn>el solo hecho de presentar</dfn> es una trampa</p>
-    </div>
-     <!-- Abreviaturas -->
-     <div>
-         <p>En la presentacion, <abbr>estas palabras</abbr> son una trampa</p>
-     </div>
-     <!-- Texto pequeño -->
-     <div>
-        <p>En la presentacion, <small>estos terminos y condiciones<small> son una trampa</p>
-    </div>
-      <!-- ASCII -->
-    <div>
-        <p></p>
-    </div>
-    <!-- Codigo Rust -->
-    <div>
-        <p><code>use std::io::{self, Write};
-
-            fn main() {
-                loop {
-                    println!("Menú:");
-                    println!("1. Opción 1");
-                    println!("2. Opción 2");
-                    println!("3. Salir");
-            
-                    print!("Elija una opción: ");
-                    io::stdout().flush().unwrap();
-            
-                    let mut eleccion = String::new();
-                    io::stdin().read_line(&mut eleccion).unwrap();
-                    let eleccion: u32 = match eleccion.trim().parse() {
-                        Ok(num) => num,
-                        Err(_) => {
-                            println!("Ingrese un número válido.");
-                            continue;
-                        }
-                    };
-            
-                    match eleccion {
-                        1 => println!("Elegiste la opción 1"),
-                        2 => println!("Elegiste la opción 2"),
-                        3 => {
-                            println!("Adiós");
-                            break;
-                        },
-                        _ => println!("Opción no válida"),
-                    }
-                }
-            }
-            </code></p>
-    </div>
+<body class="body-format">
+    <header class="main-header">
+        <h2>HTML Elements</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a class="link-format" href ="index.html">Main page</a>
+                </li>
+                <li>
+                    <a class="link-format" href ="index.html">About Me</a>
+                </li>
+                <li>
+                    <a class="link-format" href ="index.html">Misc</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <table class="table-format">
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>More information</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Wraps all the content on the entire page and is sometimes known as the root element. It also includes the lang attribute, setting the primary language of the document.</td>
+                <td>
+                    <code class="code-format">
+                        &lt;html lang="your-lang-type-here"&gt;&lt;/html&gt;
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Input</td>
+                <td>Creates interactive controls for web-based forms in order to accept data from the user.</td>
+                <td>
+                    <code class="code-format">
+                        &lt;input type="text" id="name" name="name"/&gt;
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Header</td>
+                <td>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;header&gt;
+                            <br>    &lt;h1&gt;One big title here&lt;/h1&gt;
+                            <br>    ... you can combine with more elements like H2, H3, H6, time, you name it!
+                            <br>    &lt;/header&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Footer</td>
+                <td>Typically contains information about the author of the section, copyright data or links to related documents.</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;footer&gt;
+                            <br>&lt;p&gt;© 2023 Panfleto Jamaicano&lt;/p&gt;
+                            <br>&lt;/footer&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Article</td>
+                <td>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;article&gt;
+                            <br>&lt;h2&gt;13 September 2023&lt;/h2&gt;
+                            <br>&lt;p&gt;Possibly Rain.&lt;/p&gt;
+                            <br>&lt;/article&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Section</td>
+                <td>Represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;section&gt;
+                            <br>&lt;h2&gt;Introduction&lt;/h2&gt;
+                            <br>&lt;p&gt;This document provides a guide to help with the important task of choosing the correct Apple.&lt;/p&gt;
+                            <br>&lt;/section&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Canvas</td>
+                <td>Allows to draw graphics and animations on screen.</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;canvas width="120" height="120"&gt;
+                            <br>A text to describe what is this canvas.
+                            <br>&lt;/canvas&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Audio</td>
+                <td>Allows us to embed sound content in documents. It may contain one or more audio sources, and that can be represented by using the src attribute or the <code>&lt;source&gt;, src</code> element.</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;audio controls src="/root/aud/beep.flac"&gt;
+                            <br>We can use elements like figcaption to describe what is this sound (the upper text) before audio tag.
+                            <br>&lt;/audio&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Body</td>
+                <td>Represents the content of an HTML document. There can be only one <code>&lt;body&gt;</code> element in a document.</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;body&gt;
+                            <br>...(anything possible can go here)...
+                            <br>&lt;/body&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Head</td>
+                <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets. Like, for example this document!</td>
+                <td>
+                    <code class="code-format">
+                        <section>
+                            &lt;head&gt;
+                            <br>&lt;meta charset="UTF-8"&gt;
+                            <br>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            <br>&lt;link rel="stylesheet" href="styles.css"&gt;
+                            <br>&lt;title&gt;HTML Elements&lt;title&gt;
+                            <br>&lt;/head&gt;
+                        </section>
+                    </code>
+                </td>
+                <td><a class="link-format" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"target="_blank">Link</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <footer class="footer-format">
+        © Copyright 2023 - Page WIP
+    </footer>
 </body>
 </html>

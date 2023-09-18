@@ -1,21 +1,67 @@
-.logo {
-    background: left / cover url('https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2022-08/220805-border-collie-play-mn-1100-82d2f1.jpg');
-    display: flex;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    font:
-      bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script',
-      fantasy;
-    color: #ceedf0;
-    text-shadow: #000 2px 2px 0.2rem;
-  }
-  
-  header > h1 {
-    margin-bottom: 0;
-  }
-  
-  header > time {
-    font: italic 0.7rem sans-serif;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  /* background-color: black; */
+  /* color: white; */
+}
+
+.body-format{
+  margin: 0px;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-header h2 {
+  margin: 5px;
+}
+
+.main-header nav ul {
+  margin: 5px;
+  padding: 0px;
+}
+
+.main-header nav li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.table-format{
+  /* border: 1px solid black; */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-format th{
+  text-align: center;
+  padding: 10px;
+}
+
+.table-format td{
+  /* border: 1px solid black; */
+  text-align: left;
+  padding: 10px;
+}
+
+.table-format td:nth-child(1){
+  text-align: center;
+}
+
+.table-format td:nth-child(2){
+  text-align: justify;
+}
+
+.table-format td:nth-child(4){
+  text-align: center;
+}
+
+.link-format {
+  color: blue;
+}
+
+.footer-format {
+  text-align: center;
+  padding: 10px;
+}
