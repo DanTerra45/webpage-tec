@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {
-  font-family: 'Roboto', sans-serif;
-  /* background-color: black; */
-  /* color: white; */
-}
-
 .body-format{
+  font-family: 'Roboto', sans-serif;
   margin: 0px;
 }
 
@@ -57,6 +52,11 @@
   text-align: center;
 }
 
+.code-format{
+  line-height: 1;
+  white-space: pre-line;
+}
+
 .link-format {
   color: blue;
 }
@@ -64,4 +64,23 @@
 .footer-format {
   text-align: center;
   padding: 10px;
+}
+
+/* About Me and Misc */
+
+.image-format figcaption{
+  font-style: italic;
+}
+
+.image-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-format {
+  width: 250px;
+  height: 250px;
 }
