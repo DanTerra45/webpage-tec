@@ -118,6 +118,28 @@ body {
     padding-bottom: 0.3rem;
 }
 
+/* Main Page Index */
+.divider{
+    display: flex;
+    align-items: center;
+}
+
+.divider-line{
+    flex-grow: 1;
+    border: none;
+    border-top: 2px solid hsla(0, 0%, 80%, 0.3);
+}
+
+.divider-icon{
+    padding: 0 3rem;
+    background-color: hsla(0, 0%, 80%, 0.3);
+}
+
+.divider-icon svg{
+    display: block;
+    fill: hsla(0, 0%, 0%, 1);
+}
+
 /* Album Info */
 .album-grid {
     display: flex;
@@ -156,6 +178,7 @@ body {
     max-width: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 0.5rem;
     margin: 0;
 }
 
@@ -237,6 +260,7 @@ body {
 
 .album-preview img {
     max-width: 100%;
+    border-radius: 0.5rem;
     height: auto;
 }
 
